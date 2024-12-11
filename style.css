@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main : rgb(8, 48, 93);
+}
+
+.container{
+    display: flex;
+    /* flex-direction: row; */
+    
+}
+.search-side{
+    /* position: fixed; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    background-color: var(--main);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    position: relative;
+}
+.search h2{
+    color: aliceblue;
+}
+
+input{
+    
+    height: 30px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+i{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    
+}
+
+.recipe-side{
+    overflow-y: scroll;
+    display: flex;
+    /* margin-top: 20px; */
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.card{
+    width: 40%;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 2px 20px black;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.get-details{
+    background-color: var(--main);
+    border-radius: 10px;
+    color: azure;
+    width: 100px;
+    /* height: 50px; */
+    margin-top: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px black;
+}
+
+.details{
+    display: none;
+    position: fixed;
+    width: 40%;
+    
+    min-height: 300;
+    background-color: green;
+    top: 20%;
+    left: 20%;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+.search-button{
+    width: 50px;
+    padding: 10px;
+    background-color: brown;
+    border-radius: 5px;
+}
+
+
+
